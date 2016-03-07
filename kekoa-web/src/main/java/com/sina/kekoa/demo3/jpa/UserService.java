@@ -1,4 +1,4 @@
-package com.sina.kekoa.demo2.jpa;
+package com.sina.kekoa.demo3.jpa;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
