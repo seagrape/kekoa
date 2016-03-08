@@ -11,16 +11,16 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "kekoa_user")
-public class User implements Serializable{
+public class UserJPA implements Serializable{
 
 	private static final long serialVersionUID = -5602399232953880173L;
 
-	protected User() {
+	protected UserJPA() {
 		// no-args constructor required by JPA spec
         // this one is protected since it shouldn't be used directly
 	}
 
-	public User(long id) {
+	public UserJPA(long id) {
 		this.id = id;
 	}
 	

@@ -16,7 +16,7 @@ public class UserService {
 		this.userRepository = userRepository;
 	}
 	
-	public User getUser(String name) {
+	public UserJPA getUser(String name) {
 		Assert.notNull(name, "Name must not be null");
 		return this.userRepository.findByName(name);
 	}
