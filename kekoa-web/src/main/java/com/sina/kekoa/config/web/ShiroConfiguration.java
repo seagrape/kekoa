@@ -62,12 +62,12 @@ public class ShiroConfiguration {
         return filterRegistration;
     }
 
-    @Bean(name = "lifecycleBeanPostProcessor")
+    //@Bean(name = "lifecycleBeanPostProcessor")
     public LifecycleBeanPostProcessor getLifecycleBeanPostProcessor() {
         return new LifecycleBeanPostProcessor();
     }
 
-    @Bean
+    //@Bean
     public DefaultAdvisorAutoProxyCreator getDefaultAdvisorAutoProxyCreator() {
         DefaultAdvisorAutoProxyCreator daap = new DefaultAdvisorAutoProxyCreator();
         daap.setProxyTargetClass(true);

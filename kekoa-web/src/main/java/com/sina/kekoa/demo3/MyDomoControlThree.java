@@ -2,6 +2,7 @@ package com.sina.kekoa.demo3;
 
 import java.util.List;
 
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,7 @@ public class MyDomoControlThree {
     }
 
 	@RequestMapping("/jpa")
+    //@RequiresRoles("admin") it works!
 	@Transactional(readOnly = true)
 	public String helloWorld() {
 		return this.userService.getUser("Bath").getName();
