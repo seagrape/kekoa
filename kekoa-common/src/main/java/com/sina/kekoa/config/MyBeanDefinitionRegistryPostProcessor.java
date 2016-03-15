@@ -23,7 +23,7 @@ import org.springframework.context.annotation.ScopeMetadataResolver;
  * 实现自己实例化bean并注册为Spring管理
  *
  */
-@Configuration
+//@Configuration
 public class MyBeanDefinitionRegistryPostProcessor implements
 		BeanDefinitionRegistryPostProcessor {
 

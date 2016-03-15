@@ -20,9 +20,6 @@ import org.hibernate.validator.constraints.NotEmpty;
 /**
  * 用户
  *
- * @author 单红宇(365384722)
- * @myblog http://blog.csdn.net/catoop/
- * @create 2016年1月13日
  */
 @Entity
 @Table(name = "t_user")
