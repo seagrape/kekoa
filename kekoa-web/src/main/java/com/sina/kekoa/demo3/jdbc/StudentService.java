@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 
+import com.sina.kekoa.datasource.DynamicDataSourceContextHolder;
 import com.sina.kekoa.datasource.TargetDataSource;
 
 @Service
@@ -19,6 +20,7 @@ public class StudentService {
 
     @TargetDataSource(name="ds1")
     public List<Student> getList(){
+//    	DynamicDataSourceContextHolder.setDataSourceType("ds1");
         String sql = "SELECT id,name,age FROM kekoa_student";
         return (List<Student>) jdbcTemplate.query(sql, new RowMapper<Student>(){
 

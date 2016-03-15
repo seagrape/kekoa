@@ -9,12 +9,8 @@ import org.springframework.util.Assert;
 @Transactional
 public class UserService {
 
-	private UserRepository userRepository;
-	
 	@Autowired
-	public UserService(UserRepository userRepository) {
-		this.userRepository = userRepository;
-	}
+	private UserRepository userRepository;
 	
 	public UserJPA getUser(String name) {
 		Assert.notNull(name, "Name must not be null");

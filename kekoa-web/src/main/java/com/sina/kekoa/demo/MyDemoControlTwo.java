@@ -13,13 +13,13 @@ import com.sina.kekoa.config.Shanhy;
 @RequestMapping("/two")
 public class MyDemoControlTwo {
 
-	@Resource(name="shanhyA")
-    private Shanhy shanhyA;
-
-    @Autowired
-    @Qualifier("shanhyB")
-    private Shanhy shanhyB;
-    
+//	@Resource(name="shanhyA")
+//    private Shanhy shanhyA;
+//
+//    @Autowired
+//    @Qualifier("shanhyB")
+//    private Shanhy shanhyB;
+//    
 	@RequestMapping("/")
     public String index() {
         return "Hello World 2 for Java Code Bean Definition!";
