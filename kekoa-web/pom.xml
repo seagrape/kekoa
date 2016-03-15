@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>kekoa-web</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
     <parent>
 		<artifactId>kekoa</artifactId>
@@ -43,5 +43,17 @@
 		</dependency>
 
 	</dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.sina.kekoa.KekoaApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
