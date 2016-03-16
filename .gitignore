@@ -18,6 +18,7 @@ web-deploy/
 *.ipr
 *.iml
 *.iws
+*.idea
 
 # temp ignore
 *.log
