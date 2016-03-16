@@ -35,4 +35,9 @@ public class StudentService {
 
         });
     }
+
+    @TargetDataSource(name="ds1")
+    public String testAOP() {
+        return "OK";
+    }
 }
