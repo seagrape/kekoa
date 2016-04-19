@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
-@Component("userService")
+@Component//("userService")
 @Transactional
 public class UserService {
 

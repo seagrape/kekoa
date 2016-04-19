@@ -11,7 +11,7 @@ import com.sina.kekoa.datasource.DynamicDataSourceRegister;
 
 @SpringBootApplication
 @ComponentScan//(basePackages="com.sina.kekoa.demo")
-@Import(DynamicDataSourceRegister.class)
+//@Import(DynamicDataSourceRegister.class)
 //@EnableAutoConfiguration
 //@EntityScan//("com.sina.kekoa.demo")
 //@EnableJpaRepositories//("com.sina.kekoa.demo")

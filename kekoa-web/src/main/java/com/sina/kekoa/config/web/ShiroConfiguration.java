@@ -24,7 +24,7 @@ import com.sina.kekoa.security.web.MyShiroRealm;
  * Shiro 配置
  *
  */
-@Configuration
+//@Configuration
 public class ShiroConfiguration {
 
     private static final Logger logger = LoggerFactory.getLogger(ShiroConfiguration.class);
