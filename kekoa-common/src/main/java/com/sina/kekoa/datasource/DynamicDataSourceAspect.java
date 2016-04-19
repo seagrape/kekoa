@@ -4,6 +4,7 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -18,6 +19,9 @@ public class DynamicDataSourceAspect {
 
     private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceAspect.class);
 
+//    @Pointcut("@annotation(com.sina.kekoa.datasource.TargetDataSource)")  
+//    public  void ds() {} 
+    
     @Before("@annotation(ds)")
     public void changeDataSource(JoinPoint point, TargetDataSource ds) throws Throwable {
         String dsId = ds.name();

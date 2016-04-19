@@ -5,18 +5,14 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
-@Component("userService")
+@Component//("userService")
 @Transactional
 public class UserService {
 
+	@Autowired
 	private UserRepository userRepository;
 	
-	@Autowired
-	public UserService(UserRepository userRepository) {
-		this.userRepository = userRepository;
-	}
-	
-	public User getUser(String name) {
+	public UserJPA getUser(String name) {
 		Assert.notNull(name, "Name must not be null");
 		return this.userRepository.findByName(name);
 	}

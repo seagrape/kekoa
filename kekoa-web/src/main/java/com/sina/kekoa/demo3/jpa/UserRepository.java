@@ -5,10 +5,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.Repository;
 
-public interface UserRepository extends Repository<User, Long> {
+public interface UserRepository extends Repository<UserJPA, Long> {
 
-    Page<User> findAll(Pageable pageable);
+    Page<UserJPA> findAll(Pageable pageable);
 
-    User findByName(String name);
+    UserJPA findByName(String name);
 
 }

@@ -26,9 +26,6 @@ import org.springframework.core.type.AnnotationMetadata;
  * 启动动态数据源请在启动类中（如SpringBootSampleApplication）
  * 添加 @Import(DynamicDataSourceRegister.class)
  *
- * @author 单红宇(365384722)
- * @myblog http://blog.csdn.net/catoop/
- * @create 2016年1月24日
  */
 public class DynamicDataSourceRegister
         implements ImportBeanDefinitionRegistrar, EnvironmentAware {
